@@ -86,7 +86,7 @@ export function SkillsSection() {
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {skillGroups.map(({ label, skills }) => (
           <div key={label} className="flex flex-col gap-3">
-            <h3 className="text-sm font-medium text-foreground">{label}</h3>
+            <h3 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">{label}</h3>
             <ul aria-label={`${label} Skills`} className="flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <li
